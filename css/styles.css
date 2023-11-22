@@ -1,0 +1,119 @@
+
+:root {
+    --Tamarillo: #921d13;
+    --Oshero: #e98220;
+    --BigStone: #121e2b;
+    --Quarter: #f6efdc;
+    --gris: #1c171f;
+
+  }
+  
+  html {
+    font-size: 62.5%;
+    color: #0c0d11;
+    font-family: 'SFProDisplay-Regular', Helvetica, Arial, sans-serif;
+    box-sizing: border-box; /* Hack para el modelo de box model */
+    background-image: linear-gradient(to top, var(--blanco) 0%, var(--grisClaro) 100%); /* Degradado */
+  }
+
+  *, *:before, *:after{
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-size: 16px;
+   /* text-align: center;*/
+  }
+  .sombra {
+    box-shadow: 0px 0px 15px 0px rgba(112,112, 112.5);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(112,112, 112.5);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(112,112, 112.5);
+    background-color: var(--blanco);
+    padding: 2rem; /* Espacio interior */
+    border-radius: 1rem; /* Esquinas redondeadas */
+
+  }
+ 
+
+  
+  .formulario fieldset {
+    border: none;
+  }
+  .contenedor{
+    max-width: 150rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .w-sm-100 {
+    width: 100%;
+    padding-left:  2rem;
+    padding-right: 2rem;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+  }
+  .divisor{
+    align-items: center;
+    border-bottom: 2px solid #dadde1;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 16px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    text-align: center;
+  }
+  .w-sm-50 {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .nav-bg{
+      
+  }
+
+  .navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 2rem;
+    
+  }
+  
+  .navegacion-principal a {
+    background-image: url(../image/hero.png);
+    font-size: 15px;
+    /* ../ es para regresar un nivel de directorio, la carpeta img está fuera de css */
+  background-repeat: no-repeat; /* Para evitar que se repita la imagen si se hace zoom out */
+  background-size: cover; /* Sirve para cubrir la imagen con todo el tamaño de la pantalla */
+  height: 450px; /* Alto del elemento */
+  position: relative; /* El padre debe ser relative */
+  margin-bottom: 2rem; /* Margen inferior para separar */
+  }
+  .Servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    padding-top: 20rem;
+  }
+
+
+
+  .campo
+  {
+    font-size: 2rem;
+  }
+/* Media Query */
+
+@media (min-width: 768px) { 
+
+  .navegacion-principal{
+    flex-direction: row;
+    
+  }
+}
